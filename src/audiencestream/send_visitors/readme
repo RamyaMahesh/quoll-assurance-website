@@ -1,0 +1,15 @@
+send_visitors
+
+This is a simple Bash script that sends to visitors your local uconnect vagrant
+instance for consumption by DataCloud.  Type:
+
+  send_visitors -h
+
+to get a list of parameters that this script accepts.  The script will also add
+a randomly generated UDO variable called "badge_trigger" to each uconnect reqest
+that can be used to assign a badge to the visitor within DataCloud.  The value
+of the "badge_trigger" UDO variable will be a string in the range
+'badge1'...'badge10'.  In order for the badge assignment functionality to work,
+you will need to create a data object in TealiumIQ with name "badge_trigger".
+Additionally, you will need to create badges in AudienceStream that are
+assigned based on the value of this UDO variable.
