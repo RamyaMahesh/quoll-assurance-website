@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="us">
+   <head>
+      <meta charset="utf-8">
+      <title>AS Regression Test</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         $(function() {
+         });
+      </script>
+      <script type="text/javascript"></script>
+      <style type="text/css">
+         p,div,form,h1,h2,h3{margin:10;padding:5;font-family:arial, verdana, sans-serif,FreeSans;}
+         a{text-decoration:none;color:#0055cc;}img{border:0px;}
+         h1{font-size:30px;}
+         h2{font-size:16px;}
+         h3{font-size:14px;}
+         .ht15{display:block;height:15px;font-size:0;}
+         .clear{clear:both;display:block;font-size:0;}.floatL{float:left;}.floatR{float:right;}
+         .tg  {border-collapse:collapse;border-spacing:0;}
+         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:2px;overflow:hidden;word-break:normal;}
+         .tg th{font-family:Arial, sans-serif;font-size:24px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+         .tg .tg-panel-one{background-color:#1df9d2;color:#095e56;vertical-align:top}
+         .tg .tg-panel-two{background-color:#17d6bc;color:#109c83;vertical-align:top}
+         .tg .tg-panel-three{background-color:#109c83;color:#17d6bc;vertical-align:top}
+         .tg .tg-panel-four{background-color:#095e56;color:#1df9d2;vertical-align:top}
+      </style>
+   </head>
+   <body>
+      <script type="text/javascript">var vars = [], hash;</script>
+      <script type="text/javascript">
+         var q = document.URL.split('?')[1];
+         var header_text = "Undefined";
+         if(q != undefined){
+            q = q.split('&');
+            for(var i = 0; i < q.length; i++){
+               hash = q[i].split('=');
+               vars.push(hash[1]);
+               vars[hash[0]] = hash[1];
+            }
+         }
+      </script>
+      <script type="text/javascript">var environment = ""; var as_url = ""</script>
+      <script type="text/javascript">
+         var env_query = vars['environment'];
+         if (env_query != undefined) {
+            environment = env_query.toLowerCase();
+         } else {
+            environment = "Undefined";
+         }
+         as_url = "//tags.tiqcdn.com/" + environment + "/qa-audiencestream/regression/prod/utag.js"
+         if (environment == "prod" || environment == "live") {
+            as_url = "//tags.tiqcdn.com/utag/qa-audiencestream/regression/prod/utag.js"
+         }
+      </script>
+      <script type="text/javascript">
+         var utag_data = {
+         page_name : "Product Details Page", // Contains a user-friendly name for the page.
+         page_section : "Section 3", // Contains a user-friendly page section, e.g. 'configuration section'.
+         page_category : "Product Details", // Contains a user-friendly page category, e.g. 'appliance page'.
+         page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+         page_type : "Product Details Landing Page", // Contains a user-friendly page type, e.g. 'cart page'.
+         customer_id : "", // Contains the customer's ID.
+         customer_username : "", // Contains the customer's username, e.g. johndoe38.
+         customer_status : "", // Contains the customer's status, e.g. 'logged in'.
+         customer_type : "", // Contains the customer's type, e.g. 'bronze member'.
+         customer_email : "", // Contains the customer's email.
+         customer_city : "", // Contains the city portion of the customer's address.
+         customer_state : "", // Contains the state portion of the customer's address.
+         customer_zip : "", // Contains the zip code portion of the customer's address.
+         customer_country : "", // Contains the country portion of the customer's address.
+         search_term : "", // Contains the search term or query submitted by a visitor.
+         search_results : "", // Contains the number of results returned with a search query.
+         search_type : "", // Contains the type of search conducted by the visitor.
+         product_id : ["uf_001_abc", "uf_002_def", "uf_003_ghi", "uf_004_jkl", "uf_004_mno", "uf_005_pqr"], // Contains product ID(s) - multiple values should be comma-separated.
+         product_sku : ["001ZYX325234","002YDX34354545","003UHX83632435","004IOP2243456567","005UWE23434353", "006CVB323435644"], // Contains product SKU(s) - multiple values should be comma-separated.
+         product_name : ["book", "tablet", "nerf gun", "chew toy", "italy", "cheeseburger"], // Contains product name(s) - multiple values should be comma-separated.
+         product_brand : ["Harper Collins", "Apple", "Nerf", "Kong", "italian", "in-n-out"], // Contains product brand(s) - multiple values should be comma-separated.
+         product_category : ["entertainment", "technology", "toys", "pets", "travel", "food"], // Contains product category(s) - multiple values should be comma-separated.
+         product_subcategory : ["sci-fi", "mini", "kids-toys", "dog", "europe", "yummy"], // Contains product subcategory(s) - multiple values should be comma-separated.
+         product_unit_price : [34.00, 65.00, 54.00, 4567.00, 263.00, 2.50], // Contains product unit price(s) - multiple values should be comma-separated.
+         product_list_price : [34, 65, 54, 4567, 263, 2], // Contains product list price(s) before discount - multiple values should be comma-separated.
+         product_quantity : ["3","22","45","8","19","245"], // Contains product quantity(s) - multiple values should be comma-separated.
+         product_discount : [1.00, 2.00, 3.00, 4.00, 5.00], // Contains product discount(s) - multiple values should be comma-separated.
+         order_id : "", // Contains the order or transaction ID.
+         order_total : "", // Contains the order total value.
+         order_subtotal : "", // Contains the order subtotal (not containing taxes &amp; shipping).
+         order_payment_type : "", // Contains the order payment type.
+         order_discount : "", // Contains the order discount (if any).
+         order_shipping : "", // Contains the order shipping value.
+         order_tax : "", // Contains the order tax amount.
+         order_currency : "", // Contains the currency associated with the transaction, e.g. 'USD'.
+         order_coupon_code : "", // Contains the order coupon code.
+         order_coupon_discount : "", // Contains the order coupon discount.
+         order_store : "", // Contains identification information for a store.
+         order_type : "", // Contains type of order/cart.
+         site_region : "en-US", // Contains values for the region or localized version, e.g. 'en_US'.
+         site_currency: "USD",
+         site_language: "English",
+         article_id : "", // Contains the article's ID.
+         article_name : "", // Contains the article's name.
+         article_author : "", // Contains the name of the author of an article.
+         article_publish_date : "", // Contains the publish date of an article.
+         video_id : "", // Contains the video ID.
+         video_name : "", // Contains the name of the video.
+         video_duration : "", // Contains the duration of the video. This value should be in seconds.
+         video_offset : "", // Contains the time into a video at which a certain state occurs.
+         video_state : "", // Contains the state of the video, e.g. start, play, pause, milestone, end.
+         video_player : "", // Contains the name of the video player.
+         video_player_version : "", // Contains the version of the video player.
+         event_type : "", // Contains the event type, e.g. link click', 'button click').
+         event_target : "", // Contains the name associated with an interactive element (link, button, etc).
+         event_attr1 : "", // Contains custom attribute 1 associated with an event.
+         event_attr2 : "", // Contains custom attribute 2 associated with an event.
+         event_attr3 : "", // Contains custom attribute 3 associated with an event.
+         event_attr4 : "", // Contains custom attribute 4 associated with an event.
+         _dc_ttl_: "60000" //Force Visitors to Expire in a < 2 minutes
+         }
+      </script>
+      <!-- Loading script asynchronously -->
+      <script type="text/javascript">
+         (function(a,b,c,d){
+         a=as_url;
+         b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+         a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+         })();
+      </script>
+      <script type="text/javascript">
+         var query_string = "?environment=" + environment;
+      </script>
+      <div id="mainDiv">
+         <div id="test-banner" class="hBox" style="background-color: teal; color: white; text-indent: 50px; line-height: 1.8; font-size: 30px;"></div>
+         <div class="textBox">
+            <h1 id="test-header"></h1>
+            <p id="test-path">Test page for audiencestream/regression</p>
+            <span id="cmod"></span>
+         </div>
+         <a href="home.html" onclick="location.href=this.href+query_string;return false;">HOME</a><br/>
+         <a href="productcategory.html" onclick="location.href=this.href+query_string;return false;">PRODUCT CATEGORY</a><br/>
+         <a href="productdetail.html" onclick="location.href=this.href+query_string;return false;">PRODUCT DETAIL</a><br/>
+         <a href="cart.html" onclick="location.href=this.href+query_string;return false;">CART</a><br/>
+         <a href="confirmation.html" onclick="location.href=this.href+query_string;return false;">CONFIRMATION</a><br/>
+         <script type="text/javascript">
+            $( "#test-banner" ).html( environment.toUpperCase() + " - AS Regression Test" );
+            $( "#test-header" ).html( "PRODUCT DETAIL Page - " + environment.toUpperCase());
+         </script>
+      </div>
+   </body>
+</html>

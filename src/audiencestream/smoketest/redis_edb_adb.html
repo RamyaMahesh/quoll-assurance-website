@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="us">
+   <head>
+      <meta charset="utf-8">
+      <meta name="meta_tag_edb_test" content="This is our test meta tag" />
+
+      <title>Redis Test</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+         $(function() {
+         });
+      </script>
+      <script type="text/javascript">
+           document.cookie = "favorite_color=blue";
+      </script>
+     <style type="text/css">
+         p,div,form,h1,h2,h3{margin:10;padding:5;font-family:arial, verdana, sans-serif,FreeSans;}
+         a{text-decoration:none;color:#0055cc;}img{border:0px;}
+         h1{font-size:30px;}
+         h2{font-size:16px;}
+         h3{font-size:14px;}
+         .ht15{display:block;height:15px;font-size:0;}
+         .clear{clear:both;display:block;font-size:0;}.floatL{float:left;}.floatR{float:right;}
+         .tg  {border-collapse:collapse;border-spacing:0;}
+         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:2px;overflow:hidden;word-break:normal;}
+         .tg th{font-family:Arial, sans-serif;font-size:24px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+         .tg .tg-panel-one{background-color:#1df9d2;color:#095e56;vertical-align:top}
+         .tg .tg-panel-two{background-color:#17d6bc;color:#109c83;vertical-align:top}
+         .tg .tg-panel-three{background-color:#109c83;color:#17d6bc;vertical-align:top}
+         .tg .tg-panel-four{background-color:#095e56;color:#1df9d2;vertical-align:top}
+      </style>
+   </head>
+   <body>
+      <script type="text/javascript">
+         var js_page_variable_test = "Bart did it!!";
+      </script>
+      <script type="text/javascript">var vars = [], hash; var set_email = false;</script>
+      <script type="text/javascript">
+         var q = document.URL.split('?')[1];
+         var header_text = "Undefined";
+         if(q != undefined){
+            q = q.split('&');
+            for(var i = 0; i < q.length; i++){
+               hash = q[i].split('=');
+               vars.push(hash[1]);
+               vars[hash[0]] = hash[1];
+            }
+         }
+      </script>
+      <script type="text/javascript">var dbname = ""; var email = "";var environment = "";var profile = ""; var as_url = ""</script>
+      <script type="text/javascript">
+        dbname = vars['db'];
+        email = vars['email'];
+        if(dbname != undefined){
+          switch (dbname) {
+            case 'adb':
+              header_text = "ADB Regression Test";
+              profile = "adb-only";
+              if (email != undefined){
+                set_email = true;
+              }
+              break;
+            case 'edb':
+              header_text = "EDB Regression Test";
+              profile = "edb-only";
+              set_email = true;
+              break;
+            default:
+              header_text = "Undefined";
+              profile = "Undefined";
+          }
+          profile = profile.toLowerCase();
+        } else {
+            header_text = "Undefined";
+            profile = "Undefined";
+            dbname = "Undefined";
+        }
+      </script>
+      <script type="text/javascript">
+         var env_query = vars['environment'];
+         var account = "";
+         if (env_query != undefined) {
+            environment = env_query.toLowerCase();
+            account = environment.toLowerCase() + "-redis-smoke";
+         } else {
+            environment = "Undefined";
+         }
+         as_url = "//tags.tiqcdn.com/" + environment + "/" + account + "/" + profile + "/prod/utag.js"
+      </script>
+      <script type="text/javascript">
+         var utag_data = {
+            page_name : "", // Contains a user-friendly name for the page.
+            page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+            page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+            page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+            page_type : "", // Contains a user-friendly page type, e.g. 'cart page'.
+            product_id : ["HIS82584","ORS01115854","DL3233X3","P5H323RIS","JPB32777"], // Contains product ID(s) - multiple values should be comma-separated.
+            product_sku : [], // Contains product SKU(s) - multiple values should be comma-separated.
+            product_name : ["Hanaphu","Old Rasputin","Dark Lord","Plead the 5th","サッポロビール株式会社"], // Contains product name(s) - multiple values should be comma-separated.
+            product_brand : ["Cigar City Brewing","North Coast Brewing","Three Floyds Brewing Co.","Dark Horse Brewing Company","Sapporo Breweries"], // Contains product brand(s) - multiple values should be comma-separated.
+            product_category : ["Imperial Stout","Russian Imperial Stout","stout","Russian Imperial Stout","Japanese Premium Beer"], // Contains product category(s) - multiple values should be comma-separated.
+            product_subcategory : [], // Contains product subcategory(s) - multiple values should be comma-separated.
+            product_unit_price : [23.99,17.85,18.50,24.00,14.99], // Contains product unit price(s) - multiple values should be comma-separated.
+            product_list_price : [], // Contains product list price(s) before discount - multiple values should be comma-separated.
+            product_quantity : [2,1,4,1,3], // Contains product quantity(s) - multiple values should be comma-separated.
+            product_discount : [], // Contains product discount(s) - multiple values should be comma-separated.
+            order_id : "", // Contains the order or transaction ID.
+            order_total : "", // Contains the order total value.
+            order_subtotal : "", // Contains the order subtotal (not containing taxes &amp; shipping).
+            order_payment_type : "", // Contains the order payment type.
+            order_discount : "", // Contains the order discount (if any).
+            order_shipping : "", // Contains the order shipping value.
+            order_tax : "", // Contains the order tax amount.
+            order_currency : "USD", // Contains the currency associated with the transaction, e.g. 'USD'.
+            order_coupon_code : "XKDSJFSLKS", // Contains the order coupon code.
+            order_coupon_discount : "", // Contains the order coupon discount.
+            order_store : "", // Contains identification information for a store.
+            order_type : "", // Contains type of order/cart.
+            customer_id : "", // Contains the customer's ID.
+            customer_username : "", // Contains the customer's username, e.g. johndoe38.
+            customer_status : "", // Contains the customer's status, e.g. 'logged in'.
+            customer_type : "", // Contains the customer's type, e.g. 'bronze member'.
+            customer_email : "", // Contains the customer's email.
+            customer_city : "Portland", // Contains the city portion of the customer's address.
+            customer_state : "Oregon", // Contains the state portion of the customer's address.
+            customer_zip : "97209", // Contains the zip code portion of the customer's address.
+            customer_country : "USA", // Contains the country portion of the customer's address.
+            _dc_ttl_: "60000" //Force Visitors to Expire in a < 2 minutes
+         }
+         if(set_email) {
+            utag_data.customer_email = "tealiumtest"+Math.floor(Math.random()*(1-(10000000000+1))+(1000000000000+1))+"@tealiumtest.com"
+         }
+      </script>
+      <!-- Loading script asynchronously -->
+      <script type="text/javascript">
+         (function(a,b,c,d){
+         a=as_url;
+         b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+         a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+         })();
+      </script>
+      <div id="mainDiv">
+         <div id="test-banner" class="hBox" style="background-color: teal; color: white; text-indent: 50px; line-height: 1.8; font-size: 30px;"></div>
+         <div class="textBox">
+            <h1 id="test-header"></h1>
+            <p id="test-path">pookie</p>
+            <p id="tag-path">pookie</p>
+            <p id="visitor">pookie</p>
+            <span id="cmod"></span>
+         </div>
+         <script type="text/javascript">
+            $( "#test-banner" ).html( environment.toUpperCase() + " - Redis Regression Test for " + dbname.toUpperCase());
+            $( "#test-header" ).html( "HOME Page - " + environment.toUpperCase());
+            $( "#test-path" ).html( "Test page for " + account  + "/" + profile.toLowerCase());
+            $( "#tag-path" ).html("Tag url: " + as_url);
+            if(set_email) { 
+              $( "#visitor" ).html("Visitor: " + utag_data.customer_email); 
+            } 
+            else { 
+              $( "#visitor" ).html("Visitor: Anonymous"); 
+            }
+         </script>
+      </div>
+   </body>
+</html>

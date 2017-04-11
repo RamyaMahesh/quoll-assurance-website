@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<title>publish testing</title>
-<meta charset=UTF-8" />
+<title>QA25 API Test</title>
+<meta charset="UTF-8" />
 
 <style type="text/css">
 body{text-align:center;margin:0 auto;font-family: arial, verdana, sans-serif, FreeSans;font-size:12px;}
@@ -16,6 +16,55 @@ a{text-decoration:none;color:#0055cc;}img{border:0px;}h1{font-size:20px;font-wei
 </style>
 </head>
 <body bgcolor="#FFFFFF">
+
+<script type="text/javascript">
+var utag_data = {
+  page_name : "", // Contains a user-friendly name for the page.
+  page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+  page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+  page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+  page_type : "", // Contains a user-friendly page type, e.g. 'cart page'.
+  product_id : "", // Contains product ID(s) - multiple values should be comma-separated.
+  product_sku : "", // Contains product SKU(s) - multiple values should be comma-separated.
+  product_name : "", // Contains product name(s) - multiple values should be comma-separated.
+  product_brand : "", // Contains product brand(s) - multiple values should be comma-separated.
+  product_category : "", // Contains product category(s) - multiple values should be comma-separated.
+  product_subcategory : "", // Contains product subcategory(s) - multiple values should be comma-separated.
+  product_unit_price : "", // Contains product unit price(s) - multiple values should be comma-separated.
+  product_list_price : "", // Contains product list price(s) before discount - multiple values should be comma-separated.
+  product_quantity : "", // Contains product quantity(s) - multiple values should be comma-separated.
+  product_discount : "", // Contains product discount(s) - multiple values should be comma-separated.
+  order_id : "", // Contains the order or transaction ID.
+  order_total : "", // Contains the order total value.
+  order_subtotal : "", // Contains the order subtotal (not containing taxes &amp; shipping).
+  order_payment_type : "", // Contains the order payment type.
+  order_discount : "", // Contains the order discount (if any).
+  order_shipping : "", // Contains the order shipping value.
+  order_tax : "", // Contains the order tax amount.
+  order_currency : "", // Contains the currency associated with the transaction, e.g. 'USD'.
+  order_coupon_code : "", // Contains the order coupon code.
+  order_coupon_discount : "", // Contains the order coupon discount.
+  order_store : "", // Contains identification information for a store.
+  order_type : "", // Contains type of order/cart.
+  customer_id : "", // Contains the customer ID.
+  customer_city : "", // Contains the customer city.
+  customer_state : "", // Contains the customer state.
+  customer_zip : "", // Contains the customer zip/postal code.
+  customer_country : "", // Contains the customer country.
+  customer_email : "", // Contains the customer email.
+  customer_type : "" // Contains the customer type.
+  _dc_ttl_: "60000" //Force Visitors to Expire in a < 2 minutes
+}
+</script>
+
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/qa25/qa-audiencestream/api-dashboard/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
 
 <div id="wrapper">
 <div class="floatL">&nbsp;<h1><b><a href="http://www.tealium.com"><font face="GENEVA">TEALIUM QUALITY ASSURANCE WEBSITE </font></b></h1>&nbsp</div>
@@ -64,6 +113,5 @@ a{text-decoration:none;color:#0055cc;}img{border:0px;}h1{font-size:20px;font-wei
 <li><a href="http://QA5-my.tealiumiq.com">QA5-my.tealiumiq.com</a> </li> 
 <li><a href="http://QA6-my.tealiumiq.com">QA6-my.tealiumiq.com</a> </li>
 <li><a href="http://QA7-my.tealiumiq.com">QA6-my.tealiumiq.com</a> </li>
-<li><a href="http://QA8-my.tealiumiq.com">QA8-my.tealiumiq.com</a> </li>
-<li><a href="http://QA12-my.tealiumiq.com">QA12-my.tealiumiq.com</a> </li><br> <br>
+<li><a href="http://QA8-my.tealiumiq.com">QA8-my.tealiumiq.com</a> </li><br> <br>
 </div>

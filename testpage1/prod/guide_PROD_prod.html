@@ -1,0 +1,292 @@
+<html lang="en"> 
+<head>  
+	<style>
+#lp {color:#666;}
+		#lp #wrapper {width:950px;}
+		#lp h1 {line-height:35px;font-size:26px;margin-bottom:10px;}
+		#lp h2 {color: #888; line-height:24px;margin-bottom:25px;}
+		#lp-form h1 {line-height:25px;text-shadow: 1px 1px 2px rgba(0, 76, 118, 0.9);}
+		#divFormHeader p {text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.5);line-height:17px;}
+		.lp-tagline {float:right;margin: 33px 5px 0 0; text-align:right; width:400px;}
+		#lp .header {/*border-bottom: 1px solid #ebebeb;*/}
+		#lp .header .branding .logo {margin-left:0px;}
+		.lp-content {padding:30px 30px 0 0; width: 620px; float:left;}
+		.lp-content p {line-height: 21px; margin-bottom:20px;}
+		#footer {margin-top:30px;}
+		#footer p {margin-left:0px;}
+		#lp-form {float:right;clear:right;width:300px;margin-top:30px;border-bottom:1px solid #ccc;}
+		#divFormBottom {width:240px;margin:20px auto 0 auto;clear:both;}
+		#divFormBottom p {margin:6px 0;font-size:13px;}
+		#divFormHeader {width:300px;height:68px;padding:10px 30px;color:#fff;top left no-repeat;}
+		#divFormHeader h1 {font-size:20px;font-weight:bold; color:#fff;margin-bottom:0px;}
+		#divFormLeft {float:left;clear:left;margin-top:10px;}
+		#lp input.image {margin:17px 0 15px;}
+		#lp input.text {font-size:14px;margin:0 0 18px 30px;padding:6px 5px 5px;width:228px;border:1px solid #888;float:left;clear:left;}
+		#lp label {font-size:12px;margin:0 0 1px 30px;float:left;clear:left;}
+		h5 {font-weight:bold; margin:15px 0 5px 0;font-size:13px;}
+	/* GENERIC CLASSES */
+	.after30 {margin-bottom:30px;}
+	.blue {color:#006bb5;}
+	.bold {font-weight:bold;}
+	.bottom15 {padding-bottom:15px;}
+	.alignCenter {text-align:center;}
+	.clearAll {clear:both;}
+	.largeText {font-size:15px;line-height:22px;}
+	.noheight {height:0;overflow:hidden;}
+	.red {color:#f00;}
+	.superscript {font-size:60%;vertical-align:text-top;}
+	.tinyText {font-size:11px !important;line-height:15px; color:#666;}	
+	#lp ul {margin-bottom:30px;}	
+	#lp li {margin:0 10px 10px 40px; list-style-type: disc; line-height: 18px; color:#888; font-size:18px;}
+	#lp .hr {margin: 27px 0 15px 0; border-top: 1px solid #ddd;}
+	</style>
+</head> 
+
+<body id="lp">
+
+	<script type="text/javascript">
+		/* test variables grg */
+		/* set lookup table extension test variables */
+		var jsvar1 = 1;
+		var jsvar2 = "one";
+		var jsvar3;
+		var jarray1 = [ "one", "two", "three" ];
+		var jarray2 = [ , , , ];
+		/* set e-commerce extension test variables */
+		var order_id = "00001";
+		var order_total = 0;
+		var sub_total = 2.01;
+		/* set data values extension test variables */
+		var data_value_1 = "data_value_1";
+		var data_value_2 = "data_value_2";
+		/* set join data values extension test variables */
+		var join_data_value_1 = "data";
+		var join_data_value_2 = "join";
+		var join_data_value_3 = "value";
+		/* set crypto extension test variables */
+		var crypto_var = "Encrypt this!";
+		/* set currency extension test variables */
+		var currency_var = 40.00;
+		/* set e-commerce extension test variables */
+		var order_id = "00002";
+		var order_total = 0;
+		var sub_total = 3.02;
+		/* set e-commerce extension test variables */
+		var order_id = "00003";
+		var order_total = 0;
+		var sub_total = 4.03;
+		/* channel extension */
+		var chanstrng1 = "channel";
+		var chanamt1 = 50;
+		/* utag data variable */
+		var utag_data = {
+			article_author : "", // Contains the name of the author of an article.
+			article_id : "", // Contains the article's ID.
+			article_name : "", // Contains the article's name.
+			article_publish_date : "", // Contains the publish date of an article.
+			coupon_codes : "", // Contains the order coupon codes.
+			customer_city : "", // Contains the city portion of the customer's address.
+			customer_country : "", // Contains the country portion of the customer's address.
+			customer_email : "qagrg07@gmail.com", // Contains the customer's email.
+			customer_id : "", // Contains the customer's ID.
+			customer_name : "grg_customer_name", // Contains the customer name
+			customer_state : "grgstate", // Contains the state portion of the customer's address.
+			customer_status : "", // Contains the customer's status, e.g. 'logged in'.
+			customer_type : "", // Contains the customer's type, e.g. 'bronze member'.
+			customer_username : "grguser", // Contains the customer's username, e.g. johndoe38.
+			customer_zip : "", // Contains the zip code portion of the customer's address.
+			event_attr1 : "", // Contains custom attribute 1 associated with an event.
+			event_attr2 : "", // Contains custom attribute 2 associated with an event.
+			event_attr3 : "", // Contains custom attribute 3 associated with an event.
+			event_attr4 : "", // Contains custom attribute 4 associated with an event.
+			event_target : "", // Contains the name associated with an interactive element (link, button, etc).
+			event_type : "", // Contains the event type, e.g. link click', 'button click').
+			gender : "", // Contains the customer gender
+			homepage_company_name : "grg_home_name", // 
+			lastname : "gutierrez", // 
+			link_id : "", // ID associated with a link clicked on
+			link_name : "", // User-friendly name associated with a link clicked on
+			link_type : "", // Contains the link type (i.e. banner)
+			order_coupon_code : "", // Contains the order coupon code.
+			order_coupon_discount : "", // Contains the order coupon discount.
+			order_coupon_promo : "", // Contains the order coupon promo code.
+			order_currency : "", // Contains the currency associated with the transaction, e.g. 'USD'.
+			order_discount : "", // Contains the order discount (if any).
+			order_id : "", // Contains the order or transaction ID.
+			order_payment_type : "", // Contains the order payment type.
+			order_postal_code : "", // Contains the order postal code.
+			order_shipping : "", // Contains the order shipping value.
+			order_store : "", // Contains identification information for a store.
+			order_subtotal : "", // Contains the order subtotal (not containing taxes & shipping).
+			order_tax : "", // Contains the order tax amount.
+			order_total : "", // Contains the order total value.
+			order_type : "", // Contains type of order/cart.
+			page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+			page_category_name : "", // Contains a user-friendly category name, e.g. appliances'
+			page_context_title : "", // Contains the page title using the pageContext object
+			page_context_type : "", // Contains the page type using the pageContext object
+			page_id : "", // Contains the Page ID of the current page.
+			page_language : "", // Contains the Page Language of the current page.
+			page_name : "", // Contains a user-friendly name for the page.
+			page_path : "", // Contains the Page Path of the current page.
+			page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+			page_section_name : "", // Contains a user-friendly section, e.g. product section'
+			page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+			page_subcategory_name : "", // Contains a user-friendly subcategory name, e.g. dishwashers'
+			page_template_id : "", // Contains the Page Template ID used on the current page.
+			page_template_name : "", // Contains the Page Template Name used on the current page.
+			page_type : "", // Contains a user-friendly page type, e.g. 'cart page'.
+			post_author : "", // Contains the post author.
+			post_category : "", // Contains the post's category, e.g. 'technology'.
+			post_date : "", // Contains the post date.
+			post_tags : "", // Contains the post tags, e.g. 'tag management'.
+			post_title : "", // Contains the post's title.
+			product_brand : "", // Contains product brand(s) - multiple values should be comma-separated.
+			product_category : "", // Contains product category(s) - multiple values should be comma-separated.
+			product_discount : "", // Contains product discount(s) - multiple values should be comma-separated.
+			product_id : "", // Contains product ID(s) - multiple values should be comma-separated.
+			product_list_price : "", // Contains product list price(s) before discount - multiple values should be comma-separated.
+			product_name : "", // Contains product name(s) - multiple values should be comma-separated.
+			product_quantity : "", // Contains product quantity(s) - multiple values should be comma-separated.
+			product_sku : "", // Contains product SKU(s) - multiple values should be comma-separated.
+			product_subcategory : "", // Contains product subcategory(s) - multiple values should be comma-separated.
+			product_unit_price : "", // Contains product unit price(s) - multiple values should be comma-separated.
+			search_keyword : "", // Contains the search query conducted by user
+			search_keyword_displayed : "", // Contains the search term displayed to user (when match not found for actual term).
+			search_query : "", // Contains the search query conducted by user.
+			search_results : "", // Contains the number of results returned with a search query.
+			search_results_displayed : "", // Contains the number of results returned from Search Term Displayed search results.
+			search_term : "", // Contains the search term or query submitted by a visitor.
+			search_type : "", // Contains the type of search conducted by the visitor.
+			site_currency : "", // Contains the currency shown on site, e.g. USD'
+			site_description : "", // Contains the site's description.
+			site_name : "", // Contains the site's name.
+			site_region : "", // Contains values for the region or localized version, e.g. 'en_US'.
+			store_id : "", // Contains the store ID.
+			udoarray1 : [ "udovalue1", "udovalue2", "udovalue3" ],
+			udoarray2 : [ , , , ],
+			udochamt1 : 100,
+			udochstr1 : "channel",
+			udovar1 : "udo-one",
+			udovar2 : "udo-two",
+			user_anonymous : "", // Used to store an indicator for an anonymous user.
+			user_authenticated : "", // Used to store an indicator for an authenticated user.
+			user_registered : "", // Used to store an indicator for an registered user.
+			video_duration : "", // Contains the duration of the video. This value should be in seconds.
+			video_id : "", // Contains the video ID.
+			video_name : "", // Contains the name of the video.
+			video_offset : "", // Contains the time into a video at which a certain state occurs.
+			video_player : "", // Contains the name of the video player.
+			video_player_version : "", // Contains the version of the video player.
+			video_state : "", // Contains the state of the video, e.g. start, play, pause, milestone, end.
+			_dc_ttl_ : "60000"
+		};
+	</script>
+	
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/tealium-nt/test-conn/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+	<div id="wrapper"> 
+		<div id="main"> 
+			<div class="header">
+				<div class="lp-tagline">Tag Management Simplified&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ccc">|</span>&nbsp;&nbsp;&nbsp;&nbsp;(858) 779-1344</div>
+				
+			</div>
+<div><img src="/quoll-assurance-website/images/lp-header.jpg" width="950" height="200" alt="customer quote banner"></div>
+					
+			<div class="lp-content">
+			 	<h1>Buyers Guide to Tag Management-by <em>Econsultancy</em></h1>
+				<ul>
+					<li>What is tag management and how can it benefit your organization?</li>
+					<li>What are the latest trends?</li>
+					<li>How do the different vendors stack up against each other?</li>
+				</ul>
+				
+<p>The first <em>Econsultancy</em> Tag Management Buyers Guide is the most comprehensive report available on this topic, and an invaluable resource for client-side marketers and suppliers looking for answers about tag management.</p>
+
+<p>This guide, abbreviated from the original, looks at market trends, key benefits, vendor capabilities, advice for buyers, and much more.</p>
+
+<p style="margin-bottom:0px">Tag management is one of the most important digital marketing innovations of the past decade. Download this <strong><u>free</u></strong> guide today to learn more about how it can help your organization increase marketing agility and reduce costs.</p>
+<div class="hr"></div>
+
+<h5>About Tealium</h5>
+<p style="font-size:12px; line-height:19px;margin-bottom:5px;">Tealium is the leader in enterprise tag management, serving some of the most demanding customers worldwide. Tealium’s vendor-neutral solution makes it easy for organizations to add, modify and remove digital marketing page tags through a single line of code. The company differentiates itself through a marketing-friendly approach to tag management that enables business users to manage all of their tagging requirements by themselves without JavaScript knowledge. Tealium offers turnkey integration with hundreds of online vendors; superior scale and performance; and a deep enterprise feature set to help organizations increase marketing agility, reduce tagging costs, and improve site performance.</p>	
+
+					
+					 
+			</div>
+								
+			<div id="lp-form">
+				<div id="divFormHeader">
+					<h1>Download Free!</h1>
+					<p>Fill out the form below to get your free<br/>guide to tag management.</p>
+				</div>
+				
+				<form id="WebToLeadForm" name="WebToLeadForm" method="post" action="https://tealium.sugarondemand.com/index.php?entryPoint=WebToLeadCapture">
+                
+				<div id="divFormLeft">
+					<label for="first_name">First Name: <span class="red">*</span></label>
+					<span id="sprytextfield1">
+					<input type="text" id="first_name" name="first_name" class="text" autocorrect="off">
+					</span>
+					
+					<label for="last_name">Last Name: <span class="red">*</span></label>
+					<span id="sprytextfield2">					
+					<input type="text" id="last_name" name="last_name" class="text" autocorrect="off">
+					</span>
+					
+					<label for="webtolead_email1">Email Address: <span class="red">*</span></label>
+					<span id="sprytextfield3">					
+					<input id="webtolead_email1" name="webtolead_email1" class="text" autocorrect="off" autocapitalize="off" type="email">
+					</span>
+					
+					<label for="phone_work">Phone Number:</label>
+					<input id="phone_work" name="phone_work" class="text" type="tel">
+
+					<label for="account_name">Company Name:</label>
+					<input type="text" id="account_name" name="account_name" class="text" autocorrect="off">
+				</div>
+				
+				<div id="divFormBottom">
+					<p><input type="checkbox" name="newsletter_c" id="newsletter_c" checked/>
+						Subscribe to our monthly newsletter</p>
+						
+						
+					<p class="tinyText alignCenter clearAll bottom15">
+						We respect your privacy and will never sell, rent, or share your personal information.</p>
+				</div>
+				
+				<input name="req_id" type="hidden" id="req_id" value="first_name;last_name;webtolead_email1">
+			    <input name="redirect_url" type="hidden" id="redirect_url" value="http://www.tealium.com/guide/bg-thankyou.html">
+			    <input name="webcampaign_c" type="hidden" id="webcampaign_c">
+			    <input name="websource_c" type="hidden" id="websource_c">
+			    <input type="hidden" name="webterm_c" id="webterm_c">
+			    <input type="hidden" name="referringurl_c" id="referringurl_c">
+			    <script>document.WebToLeadForm.referringurl_c.value = document.referrer;</script>
+			    <input type="hidden" name="web_custom_6_c" id="web_custom_6_c">
+			    <script>document.WebToLeadForm.web_custom_6_c.value = location.search;</script>
+			    
+			    <input name="campaign_id" type="hidden" id="campaign_id" value="8bdef08f-b170-c712-7a60-5018666aec88">
+			    <input name="assigned_user_id" type="hidden" id="assigned_user_id" value="1">
+			    <input name="team_id" type="hidden" id="team_id" value="1">
+			    <input name="team_set_id" type="hidden" id="team_set_id" value="1">
+			    <input name="lead_source" type="hidden" id="lead_source" value="Campaign">
+				</form>
+				
+			</div>
+			<br clear="all" />
+				
+			<div><img src="/quoll-assurance-website/images/lp-clients.png" style="padding-top:25px" height="76" width="926"></div>		
+			<div id="footer">
+			</div>
+							
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="us">
+   <head>
+      <meta charset="utf-8">
+      <title>Extension Test</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         $(function() {
+         });
+      </script>
+      <script type="text/javascript"></script>
+      <style type="text/css">
+         p,div,form,h1,h2,h3{margin:0px;padding:5px;font-family:arial, verdana, sans-serif,FreeSans;}
+         .clear{clear:both;display:block;font-size:0;}.floatL{float:left;}.floatR{float:right;}
+         .tg  {border-collapse:collapse;border-spacing:0;}
+         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:2px;overflow:hidden;word-break:normal;}
+         .tg th{font-family:Arial, sans-serif;font-size:24px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+         .tg .panel-one{background-color:#1df9d2;color:#095e56;vertical-align:top}
+         .tg .panel-two{background-color:#17d6bc;color:#109c83;vertical-align:top}
+         .tg .panel-three{background-color:#109c83;color:#17d6bc;vertical-align:top}
+         .tg .panel-four{background-color:#095e56;color:#1df9d2;vertical-align:top}
+         .container {width: 950px;height: 480px; position: static;}
+         .left{float: left;width: 640px;vertical-align:center}
+         .right {float: left;width: 210px;}
+         .slogan {width: 400px;}
+      </style>
+   </head>
+   <body>
+      <script type="text/javascript">var vars = [], hash; var show_teal = false;</script>
+      <script type="text/javascript">
+         var q = document.URL.split('?')[1];
+         var header_text = "Undefined";
+         if(q != undefined){
+         	q = q.split('&');
+         	for(var i = 0; i < q.length; i++){
+         		hash = q[i].split('=');
+         		vars.push(hash[1]);
+         		vars[hash[0]] = hash[1];
+         	}
+         }
+      </script>
+      <script type="text/javascript">
+         var utag_data = {
+            product_id : "005", // Contains product ID(s) - multiple values should be comma-separated.
+         	product_sku : "", // Contains product SKU(s) - multiple values should be comma-separated.
+         	product_name : "Dark Beer", // Contains product name(s) - multiple values should be comma-separated.
+         	product_brand : "", // Contains product brand(s) - multiple values should be comma-separated.
+         	product_category : "beer", // Contains product category(s) - multiple values should be comma-separated.
+         	product_subcategory : "good beer", // Contains product subcategory(s) - multiple values should be comma-separated.
+         	product_unit_price : "23.99,17.85,18.50,24.00,14.99", // Contains product unit price(s) - multiple values should be comma-separated.
+         	product_list_price : "", // Contains product list price(s) before discount - multiple values should be comma-separated.
+         	product_quantity : "2,1,4,1,3", // Contains product quantity(s) - multiple values should be comma-separated.
+         	product_discount : "", // Contains product discount(s) - multiple values should be comma-separated.
+         	order_id : "", // Contains the order or transaction ID.
+         	order_total : "", // Contains the order total value.
+         	order_subtotal : "", // Contains the order subtotal (not containing taxes &amp; shipping).
+         	order_payment_type : "", // Contains the order payment type.
+         	order_discount : "", // Contains the order discount (if any).
+         	order_shipping : "", // Contains the order shipping value.
+         	order_tax : "", // Contains the order tax amount.
+         	order_currency : "USD", // Contains the currency associated with the transaction, e.g. 'USD'.
+         	order_coupon_code : "XKDSJFSLKS", // Contains the order coupon code.
+         	order_coupon_discount : "", // Contains the order coupon discount.
+         	order_store : "", // Contains identification information for a store.
+         	order_type : "", // Contains type of order/cart.
+         	customer_id : "", // Contains the customer ID.
+         	customer_city : "San Diego", // Contains the customer city.
+         	customer_state : "California", // Contains the customer state.
+         	customer_zip : "92121", // Contains the customer zip/postal code.
+         	customer_country : "USA", // Contains the customer country.
+         	customer_email : "", // Contains the customer email.
+         	customer_type : "", // Contains the customer type.
+         	tealium_environment : "" // 
+         }
+      </script>
+      <script type="text/javascript">
+         var variation = vars['variation'];
+         if (variation != undefined){
+         	switch (variation) {
+         		case 'float_values':
+          		   utag_data.product_unit_price = "23.994,17.850,18.50,23.996,14.992";
+         		   utag_data.product_quantity = "2.0,1.000,4.00,1.00,3.000";
+         		   break;
+          		case 'integer_values':
+          		   utag_data.product_unit_price = "23,18,19,24,15";
+         		   break;
+         		case 'strings_with_spaces':
+          		   utag_data.product_unit_price = "23.99, 17.85, 18.50, 24.00, 14.99";
+         		   utag_data.product_quantity = "2, 1, 4, 1, 3";
+         		   break;
+         	}
+         }
+      </script>
+      <!-- Loading script asynchronously -->
+      <script type="text/javascript">
+         (function(a,b,c,d){
+         	a='//tags.tiqcdn.com/utag/qa-audiencestream/extensions/prod/utag.js';
+         	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+         	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+         })();
+      </script>
+      <div id="mainDiv">
+         <div id="test-title" class="hBox" style="background-color: teal; color: white; text-indent: 50px; line-height: 1.8; font-size: 30px;"></div>
+         <p>This is a test</p>
+         <div class="textBox">
+            <h1 id="test-header"></h1>
+            <p id="test-path">Test page for : tealiumiq/extensions</p>
+            <span id="cmod"></span>
+         </div>
+         <table id="teal-chrome" class="tg">
+            <tr>
+               <th id="chrome-one">T</th>
+               <th id="chrome-two">E</th>
+               <th id="chrome-three">A</th>
+               <th id="chrome-four">M</th>
+            </tr>
+         </table>
+         <div id="text-panel">
+            <p id="text-one" class="slogan"></p>
+            <p id="text-two" class="slogan"></p>
+            <p id="text-three" class="slogan"></p>
+            <p id="text-four" class="slogan"></p>
+            <p id="text-five" class="slogan"></p>
+         </div>
+         <div id="alice" class="container">
+            <div class="left">
+            	<img id="alice-image" style="display: inline; margin: 0 5px;" src = "alice_rabbit_sm.jpg" alt="" >
+            </div>
+            <div class="right">
+	            <input id="rabbit" type="radio" name="alice" onClick="clickRabbit()" value="rabbit" checked="checked"/>Follow the white rabbit<br>
+	            <input id="drink" type="radio" name="alice" onClick="document.getElementById('drink').focus()" value="drink" />Drink Me<br>
+	            <input id="eat" type="radio" name="alice" onClick="document.getElementById('eat').focus()" value="eat" />Eat Me<br>
+	            <input id ="red-queen" type="radio" name="alice" onClick="clickQueen()" value="red-queen" />Off with her head!!<br>
+            </div>
+         </div>
+         <script type="text/javascript">
+            var extensionname = vars['extension'];
+            if(extensionname != undefined){
+            	switch (extensionname) {
+            		case 'javascript_code':
+            			header_text = "Javascript Code";
+            			break;
+            		case 'set_data_values':
+            			header_text = "Set Data Values";
+            			break;
+            		case 'lookup_table':
+            			header_text = "Lookup Table";
+            			break;
+            		case 'e_commerce':
+            			header_text = "E-Commerce";
+            			break;
+            		case 'jquery_onhandler':
+            			header_text = "JQuery OnHandler (1.7 and above)";
+            			show_teal = true;
+            		break;
+            		default:
+            			header_text = "Undefined";
+            	}
+            }
+            $( "#test-title" ).html( header_text + " Extension" );
+            $( "#test-header" ).html( " Extension: " + header_text);
+            $('input:radio[name="alice"]').filter('[value="rabbit"]').prop('checked', true);
+         </script>
+      </div>
+      <script>if(show_teal) { $("#teal-chrome").show(); $("#text-panel").show(); $("#text-one").html('\"The quicker picker upper.\"');} else { $("#teal-chrome").hide();  $("#text-panel").hide();} </script>
+      <script type="text/javascript">$("#alice").hide();</script>
+      <script type="text/javascript">
+         function clickRabbit() {
+         	document.getElementById('rabbit').focus();
+         	document.getElementById('alice-image').src('alice_rabbit_sm.jpg');
+         }
+
+         function clickQueen(){
+            document.getElementById('red-queen').focus();
+            $("#text-one").hide();
+         }
+
+      </script>
+   </body>
+</html>
