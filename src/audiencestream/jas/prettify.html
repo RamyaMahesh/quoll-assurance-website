@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Pretty ME</title>
+
+<meta charset="utf-8" /> 
+</head>
+<body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+function prettiyfyMe(){
+  var value = $( "textarea#prettyMe" ).val();
+  var json_document = JSON.parse(value).json_document;
+  var pretty = JSON.parse(json_document)
+  $('textarea').val((JSON.stringify(pretty,"",2)));
+}
+</script>
+<div style="display:flex">
+  <textarea  style="height:800px;width:800px;" id="prettyMe"></textarea>
+  <div><button onClick="prettiyfyMe()">PRETTY!</button>
+</div>
+  </div>
+</body>
+</html>
